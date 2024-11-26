@@ -1,0 +1,72 @@
+#$ TITLE: OMPHOBBY M7 Profiles
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: PROFILE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: OMPHOBBY, M7
+#$ AUTHOR: Jonas Wackershauser
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Profiles for OMPHOBBY M7:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: <img src="https://github.com/betaflight/firmware-presets/assets/25570978/7d87b940-dcfb-43a5-aaf3-182d59fc8ced" width="350px"/>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: These are test profiles for the OMPHOBBY M7
+#$ DESCRIPTION:
+#$ DESCRIPTION: Created by:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: N/A
+#$ DESCRIPTION:
+#$ INCLUDE: presets/4.4/profile/defaults.txt
+
+#$ OPTION_GROUP BEGIN: Choose desired headspeed
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    set roll_p_gain = 50
+    set roll_i_gain = 110
+    set roll_d_gain = 80
+    set roll_f_gain = 140
+    set roll_b_gain = 5
+	set pitch_p_gain = 50
+    set pitch_i_gain = 110
+    set pitch_d_gain = 75
+    set pitch_f_gain = 140
+    set pitch_b_gain = 15
+    set yaw_p_gain = 145
+    set yaw_i_gain = 170
+    set yaw_d_gain = 0
+    set yaw_b_gain = 0
+    set yaw_f_gain = 0
+
+    set error_rotation = ON
+    set error_decay_time_ground = 25
+    set iterm_relax_type = RPY
+    set iterm_relax_cutoff = 7,7,7
+    set error_limit = 30,30,45
+    set offset_limit = 45,45
+    set pitch_o_gain = 30
+    set roll_o_gain = 30
+    
+	set pitch_collective_ff_gain = 0
+    set cyclic_cross_coupling_gain = 50
+    set cyclic_cross_coupling_ratio = 0
+    set cyclic_cross_coupling_cutoff = 25
+    set error_decay_time_cyclic = 250
+	set error_decay_limit_cyclic = 12
+
+    set yaw_cw_stop_gain = 120
+    set yaw_ccw_stop_gain = 80
+    set yaw_precomp_cutoff = 5
+	set yaw_cyclic_ff_gain = 0
+    set yaw_collective_ff_gain = 30
+    set yaw_collective_dynamic_gain = 0
+    set yaw_collective_dynamic_decay = 25
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (CHECKED): Medium Spice (Med. Alt.)
+	set simplified_master_multiplier = 100
+    #$ OPTION END
+
+#$ OPTION_GROUP END
