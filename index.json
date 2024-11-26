@@ -150,7 +150,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "4731e340b77ae9c136a5c31d003edf8839666fc5b9515b4a17a88a6507584ee2",
+      "hash": "07daf0c9c38a93dc6df4f258152e97a02160e4f60b10ca6269eafdaa41c7a238",
       "title": "Rotorflight 4.4 (2.1) TUNE defaults",
       "firmware_version": [
         "4.4"

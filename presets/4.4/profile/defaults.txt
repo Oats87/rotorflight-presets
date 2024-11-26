@@ -10,12 +10,26 @@
 #$ DESCRIPTION: DOES NOT reset rates, filters, rc_smoothing, and many other parameters.
 #$ PRIORITY: 0
 
-
-# THE FOLLOWING PARAMETERS ARE CONTROLLED
-# ALL WILL BE RESET TO DEFAULTS WHEN THIS DEFAULT IS RUN
-# ALL USER PREFERENCES FOR THESE VALUES WILL BE OVER-WRITTEN
-# IF THE AUTHOR WANTS A NON-DEFAULT VALUE, THEIR TUNE MUST SET IT
-# BOTH CHECKED AND UNCHECKED OPTIONS CAN BE USED FOR THESE PARAMETERS
+#$ OPTION_GROUP BEGIN: Choose Destination Profile
+    #$ OPTION BEGIN (CHECKED): Profile 1
+    profile 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 2
+    profile 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 3
+    profile 3
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 4
+    profile 4
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 5
+    profile 5
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 6
+    profile 6
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 # -- PID values (default) --
 set pid_mode = 3
