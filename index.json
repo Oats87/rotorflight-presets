@@ -150,7 +150,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "07daf0c9c38a93dc6df4f258152e97a02160e4f60b10ca6269eafdaa41c7a238",
+      "hash": "346ac180640687aa83c1acff0a3f1e941e10bdcf0de8f35fcf2fc2ba90a0a0db",
       "title": "Rotorflight 4.4 (2.1) TUNE defaults",
       "firmware_version": [
         "4.4"
@@ -170,7 +170,7 @@
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/m7-etocii.txt",
-      "hash": "ceda0539d646e8fc39f481f4e182a5949a4ad9aeba0bbb99e7bd40bc9c02163a",
+      "hash": "dd2e26eb85526e162d6c4841363355a36ec8b0ab427d6bd0d0848ed7643cb3b7",
       "title": "OMPHOBBY M7 2200 RPM Profile - Jiawen Bao",
       "firmware_version": [
         "4.4",
@@ -187,7 +187,7 @@
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/m7-jonas.txt",
-      "hash": "99fba947d7172749dbf0702a3c561d4e32a6d297fe04c18a0a0207210355810a",
+      "hash": "e19a15394db93ed1c86e3c0158eff9714d07cd01dee8381134c751b9fbe7ce55",
       "title": "OMPHOBBY M7 Profiles",
       "firmware_version": [
         "4.4",

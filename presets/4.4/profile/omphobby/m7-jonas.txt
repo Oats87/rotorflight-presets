@@ -21,7 +21,7 @@
 #$ DESCRIPTION:
 #$ INCLUDE: presets/4.4/profile/defaults.txt
 
-#$ OPTION_GROUP BEGIN: Choose desired headspeed
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Desired Headspeed
     #$ OPTION BEGIN (UNCHECKED): 1400 RPM
     set roll_p_gain = 50
     set roll_i_gain = 110
@@ -65,7 +65,7 @@
 
     #$ OPTION END
 
-    #$ OPTION BEGIN (CHECKED): Medium Spice (Med. Alt.)
+    #$ OPTION BEGIN (CHECKED): 1600 RPM
 	set simplified_master_multiplier = 100
     #$ OPTION END
 

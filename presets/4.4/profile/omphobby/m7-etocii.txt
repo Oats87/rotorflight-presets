@@ -19,29 +19,9 @@
 #$ DESCRIPTION: N/A
 #$ DESCRIPTION:
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose destination profile
-    #$ OPTION BEGIN (CHECKED): Profile 1
-    profile 1
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Profile 2
-    profile 2
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Profile 3
-    profile 3
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Profile 4
-    profile 4
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Profile 5
-    profile 5
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Profile 6
-    profile 6
-    #$ OPTION END
-#$ OPTION_GROUP END
 #$ INCLUDE: presets/4.4/profile/defaults.txt
 
-#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose desired headspeed
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Desired Headspeed
     #$ OPTION BEGIN (CHECKED): 2200 RPM
     set roll_p_gain = 35
     set roll_i_gain = 120

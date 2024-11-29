@@ -10,7 +10,7 @@
 #$ DESCRIPTION: DOES NOT reset rates, filters, rc_smoothing, and many other parameters.
 #$ PRIORITY: 0
 
-#$ OPTION_GROUP BEGIN: Choose Destination Profile
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Destination Profile
     #$ OPTION BEGIN (CHECKED): Profile 1
     profile 1
     #$ OPTION END
