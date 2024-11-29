@@ -19,7 +19,7 @@
 #$ DESCRIPTION: N/A
 #$ DESCRIPTION:
 
-#$ OPTION_GROUP BEGIN (EXCLUSIVE): Choose destination profile
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose destination profile
     #$ OPTION BEGIN (CHECKED): Profile 1
     profile 1
     #$ OPTION END
@@ -41,7 +41,7 @@
 #$ OPTION_GROUP END
 #$ INCLUDE: presets/4.4/profile/defaults.txt
 
-#$ OPTION_GROUP BEGIN (EXCLUSIVE): Choose desired headspeed
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Choose desired headspeed
     #$ OPTION BEGIN (CHECKED): 2200 RPM
     set roll_p_gain = 35
     set roll_i_gain = 120
@@ -83,7 +83,7 @@
     set yaw_collective_dynamic_gain = 0
     set yaw_collective_dynamic_decay = 30
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): 2300 RPM
+    #$ OPTION BEGIN (UNCHECKED): 2300 RPM
     set roll_p_gain = 35
     set roll_i_gain = 120
     set roll_d_gain = 5
