@@ -1,17 +1,16 @@
-#$ TITLE: Rotorflight 4.4 (2.1) TUNE defaults
+#$ TITLE: Rotorflight 2.1 Profile Defaults
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: PROFILE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, tune, pid, basic, default
 #$ AUTHOR: Rotorflight
-#$ DESCRIPTION: Resets all Basic 4.4 Tune category parameters to defaults
+#$ DESCRIPTION: Resets Profile parameters to defaults
 #$ DESCRIPTION: WARNING: Overwrites all settings mentioned below to defaults.  The User cannot retain their previous values.
 #$ DESCRIPTION: WARNING: Tune authors must explicitly set these values to something other than default, if needed for the tune.
-#$ DESCRIPTION: DOES NOT reset rates, filters, rc_smoothing, and many other parameters.
 #$ PRIORITY: 0
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Destination Profile
-    #$ OPTION BEGIN (CHECKED): Profile 1
+    #$ OPTION BEGIN (UNCHECKED): Profile 1
     profile 1
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 2
@@ -31,6 +30,7 @@
     #$ OPTION END
 #$ OPTION_GROUP END
 
+#$ OPTION BEGIN (CHECKED): Reset Profile Before Apply
 # -- PID values (default) --
 set pid_mode = 3
 set pid_dterm_mode = GYRO
@@ -135,3 +135,4 @@ set gov_cyclic_ff_weight = 10
 set gov_collective_ff_weight = 100
 set gov_max_throttle = 100
 set gov_min_throttle = 10
+#$ OPTION END
