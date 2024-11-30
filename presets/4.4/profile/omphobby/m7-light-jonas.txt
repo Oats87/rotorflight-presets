@@ -10,39 +10,39 @@
 #$ DESCRIPTION: Profiles for the OMPHOBBY M7:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: This is a low headspeed version of my M7 tune.
-#$ DESCRIPTION: <img src="https://www.rotorflight.org/assets/images/jw-m7-light-4d45da6498f37a09007756e4d1b4dbb6.jpeg" width="600px" style="display: block;" />
+#$ DESCRIPTION: <img src="https://www.rotorflight.org/assets/images/jw-m7-light-4d45da6498f37a09007756e4d1b4dbb6.jpeg" width="900px" style="display: block;" />
 #$ DESCRIPTION: Created by:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: Jonas Wackershauser @Johnny31297
 #$ DESCRIPTION:
 #$ DESCRIPTION: Description:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: Hey there!<br>As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.
+#$ DESCRIPTION: Hey there!<br><br>As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.<br>
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Helicopter: OMPHOBBY M7<br>
-#$ DESCRIPTION: Main Rotor Blades: RotorTech 700mm Ultimate<br>
-#$ DESCRIPTION: Tail Rotor Blades: RotorTech 116mm Ultimate<br>
-#$ DESCRIPTION: Swash Servos: KST HLS X20-1806 Low Profile<br>
-#$ DESCRIPTION: Yaw Servo: KST X20-1806 Low Profile<br>
-#$ DESCRIPTION: FBL/Receiver: RadioMaster NEXUS & RP3-H<br>
-#$ DESCRIPTION: Motor: SUNNYSKY R4520-840Kv<br>
-#$ DESCRIPTION: Pinion: 13t<br>
-#$ DESCRIPTION: ESC: Scorpion Tribunus III 06-160A<br>
-#$ DESCRIPTION: Battery: OMPHOBBY 6S 5100mAh 70C<br>
-#$ DESCRIPTION: Backup: -<br>
-#$ DESCRIPTION: Dampers: 90° Shore Rubber<br>
-#$ DESCRIPTION: Servo Arms: OMPHOBBY 18mm Plastic<br>
-#$ DESCRIPTION: Geometry: 32mm 3D<br>
-#$ DESCRIPTION: ESC Setup: BEC 8V2, ESC Governor Default Values<br>
+#$ DESCRIPTION: **Helicopter:**         OMPHOBBY M7<br>
+#$ DESCRIPTION: **Main Rotor Blades:**  RotorTech 700mm Ultimate<br>
+#$ DESCRIPTION: **Tail Rotor Blades:**  RotorTech 116mm Ultimate<br>
+#$ DESCRIPTION: **Swash Servos:**       KST HLS X20-1806 Low Profile<br>
+#$ DESCRIPTION: **Yaw Servo:**          KST X20-1806 Low Profile<br>
+#$ DESCRIPTION: **FBL/Receiver:**       RadioMaster NEXUS & RP3-H<br>
+#$ DESCRIPTION: **Motor:**              SUNNYSKY R4520-840Kv<br>
+#$ DESCRIPTION: **Pinion:**             13t<br>
+#$ DESCRIPTION: **ESC:**                Scorpion Tribunus III 06-160A<br>
+#$ DESCRIPTION: **Battery:**            OMPHOBBY 6S 5100mAh 70C<br>
+#$ DESCRIPTION: **Backup:**             -<br>
+#$ DESCRIPTION: **Dampers:**            90° Shore Rubber<br>
+#$ DESCRIPTION: **Servo Arms:**         OMPHOBBY 18mm Plastic<br>
+#$ DESCRIPTION: **Geometry:**           32mm 3D<br>
+#$ DESCRIPTION: **ESC Setup:**          BEC 8V2, ESC Governor Default Values<br>
 #$ DESCRIPTION:
-#$ DESCRIPTION: Revision Date:       03.07.2024<br>
-#$ DESCRIPTION: Rotorflight Version:    2.0.0 Release<br>
-#$ DESCRIPTION: Rotorflight Hardware:   RadioMaster NEXUS<br>
-#$ DESCRIPTION: Tune Attributes:     Precise, Locked-In, 3D, Robotic<br>
+#$ DESCRIPTION: **Revision Date:**          03.07.2024<br>
+#$ DESCRIPTION: **Rotorflight Version:**    2.0.0 Release<br>
+#$ DESCRIPTION: **Rotorflight Hardware:**   RadioMaster NEXUS<br>
+#$ DESCRIPTION: **Tune Attributes:**        Precise, Locked-In, 3D, Robotic<br>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: Converted to preset by:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: Chris Kim
+#$ DESCRIPTION: Chris Kim @Oats87
 #$ INCLUDE: presets/4.4/profile/defaults.txt
 
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Headspeed
