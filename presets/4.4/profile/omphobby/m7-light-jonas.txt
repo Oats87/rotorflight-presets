@@ -8,6 +8,7 @@
 
 #$ PARSER: MARKED
 #$ DESCRIPTION: <img src="https://www.rotorflight.org/assets/images/jw-m7-light-4d45da6498f37a09007756e4d1b4dbb6.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 90%;" />
+#$ DESCRIPTION: 
 #$ DESCRIPTION: Created by:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: Jonas Wackershauser @Johnny31297
