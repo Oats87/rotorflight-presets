@@ -10,7 +10,7 @@
 #$ DESCRIPTION: Profiles for the OMPHOBBY M7:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: This is a high headspeed version of my M7 tune.
-#$ DESCRIPTION: <img src="https://www.rotorflight.org/assets/images/jw-m7-light-4d45da6498f37a09007756e4d1b4dbb6.jpeg" width="300px" />
+#$ DESCRIPTION: <img src="https://www.rotorflight.org/assets/images/jw-m7-light-4d45da6498f37a09007756e4d1b4dbb6.jpeg" width="300px" style="display: block;" />
 #$ DESCRIPTION: Created by:
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: Jonas Wackershauser @Johnny31297
@@ -19,21 +19,21 @@
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: Hey there! As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.
 #$ DESCRIPTION: 
-#$ DESCRIPTION: Helicopter: OMPHOBBY M7 
-#$ DESCRIPTION: Main Rotor Blades: RotorTech 700mm Ultimate
-#$ DESCRIPTION: Tail Rotor Blades: RotorTech 116mm Ultimate
-#$ DESCRIPTION: Swash Servos: KST HLS X20-1806 Low Profile
-#$ DESCRIPTION: Yaw Servo: KST X20-1806 Low Profile
-#$ DESCRIPTION: FBL/Receiver: RadioMaster NEXUS & RP3-H
-#$ DESCRIPTION: Motor: SUNNYSKY R4520-840Kv
-#$ DESCRIPTION: Pinion: 13t
-#$ DESCRIPTION: ESC: Scorpion Tribunus III 06-160A
-#$ DESCRIPTION: Battery: OMPHOBBY 6S 5100mAh 70C
-#$ DESCRIPTION: Backup: -
-#$ DESCRIPTION: Dampers: 90° Shore Rubber
-#$ DESCRIPTION: Servo Arms: OMPHOBBY 18mm Plastic
-#$ DESCRIPTION: Geometry: 32mm 3D
-#$ DESCRIPTION: ESC Setup: BEC 8V2, ESC Governor Default Values
+#$ DESCRIPTION: Helicopter: OMPHOBBY M7  
+#$ DESCRIPTION: Main Rotor Blades: RotorTech 700mm Ultimate  
+#$ DESCRIPTION: Tail Rotor Blades: RotorTech 116mm Ultimate  
+#$ DESCRIPTION: Swash Servos: KST HLS X20-1806 Low Profile  
+#$ DESCRIPTION: Yaw Servo: KST X20-1806 Low Profile  
+#$ DESCRIPTION: FBL/Receiver: RadioMaster NEXUS & RP3-H  
+#$ DESCRIPTION: Motor: SUNNYSKY R4520-840Kv  
+#$ DESCRIPTION: Pinion: 13t  
+#$ DESCRIPTION: ESC: Scorpion Tribunus III 06-160A  
+#$ DESCRIPTION: Battery: OMPHOBBY 6S 5100mAh 70C  
+#$ DESCRIPTION: Backup: -  
+#$ DESCRIPTION: Dampers: 90° Shore Rubber  
+#$ DESCRIPTION: Servo Arms: OMPHOBBY 18mm Plastic  
+#$ DESCRIPTION: Geometry: 32mm 3D  
+#$ DESCRIPTION: ESC Setup: BEC 8V2, ESC Governor Default Values  
 #$ DESCRIPTION:
 #$ DESCRIPTION: Revision Date:       03.07.2024
 #$ DESCRIPTION: Rotorflight Version:    2.0.0 Release
