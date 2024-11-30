@@ -30,7 +30,8 @@
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#$ OPTION BEGIN (CHECKED): Reset Profile Before Apply
+#$ OPTION_GROUP BEGIN: Reset Profile Before Apply
+#$ OPTION BEGIN (CHECKED): Reset
 # -- PID values (default) --
 set pid_mode = 3
 set pid_dterm_mode = GYRO
@@ -136,3 +137,4 @@ set gov_collective_ff_weight = 100
 set gov_max_throttle = 100
 set gov_min_throttle = 10
 #$ OPTION END
+#$ OPTION_GROUP END

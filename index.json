@@ -151,7 +151,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "1326e664b79daddcc4aaa517cded32474285850f984df8c301fc4c9ac62ad522",
+      "hash": "7f8563e7561061b8335cf15ba054e75193859de76cfc99f7df47f99e2f7eb82a",
       "title": "Rotorflight 2.1 Profile Defaults",
       "firmware_version": [
         "4.4"
