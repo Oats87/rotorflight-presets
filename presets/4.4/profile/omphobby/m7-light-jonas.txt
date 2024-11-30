@@ -17,7 +17,7 @@
 #$ DESCRIPTION: Hey there!<br><br>As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.<br>
 #$ DESCRIPTION: 
 #$ DESCRIPTION: |Item|Component|
-#$ DESCRIPTION: |----|---------|
+#$ DESCRIPTION: |:---|:--------|
 #$ DESCRIPTION: |**Helicopter**|OMPHOBBY M7|
 #$ DESCRIPTION: |**Main Rotor Blades**|RotorTech 700mm Ultimate|
 #$ DESCRIPTION: |**Tail Rotor Blades**|RotorTech 116mm Ultimate|
@@ -34,6 +34,8 @@
 #$ DESCRIPTION: |**Geometry**|32mm 3D|
 #$ DESCRIPTION: |**ESC Setup**|BEC 8V2, ESC Governor Default Values|
 #$ DESCRIPTION:
+#$ DESCRIPTION: |Info|Value|
+#$ DESCRIPTION: |:---|:----|
 #$ DESCRIPTION: |**Revision Date**|03.07.2024|
 #$ DESCRIPTION: |**Rotorflight Version**|2.0.0 Release|
 #$ DESCRIPTION: |**Rotorflight Hardware**|RadioMaster NEXUS|
