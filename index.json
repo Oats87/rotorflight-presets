@@ -220,6 +220,23 @@
       ],
       "author": "Jonas Wackershauser",
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/profile/omphobby/m7-test/m7-test-jonas.txt",
+      "hash": "dcd4ef1dab431e075338914a1ee83d6d77270863f77a30b7753503cb1dfc52f1",
+      "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "PROFILE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "OMPHOBBY",
+        "M7"
+      ],
+      "author": "Jonas Wackershauser",
+      "priority": 1000000000000
     }
   ]
 }
