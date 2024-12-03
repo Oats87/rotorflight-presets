@@ -1,0 +1,76 @@
+#$ TITLE: OMPHOBBY M7 by etocii 
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: PROFILE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: OMPHOBBY, M7
+#$ AUTHOR: Jiawen Bao
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Profile for the OMPHOBBY M7:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: This is a preset profile for the OMPHOBBY M7, setting the governor headspeed to 2200 RPM.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Created by:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Jiawen Bao
+#$ DESCRIPTION:
+
+#$ INCLUDE: presets/4.4/profile/defaults.txt
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 1
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 1
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 2
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 2
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 3
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 3
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 4
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 4
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 5
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 5
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 6
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2200 RPM
+    profile 6
+#$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
+    #$ OPTION END
+#$ OPTION_GROUP END

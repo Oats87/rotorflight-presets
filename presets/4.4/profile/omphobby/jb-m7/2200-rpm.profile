@@ -1,26 +1,3 @@
-#$ TITLE: OMPHOBBY M7 by etocii 
-#$ FIRMWARE_VERSION: 4.4
-#$ FIRMWARE_VERSION: 4.5
-#$ CATEGORY: PROFILE
-#$ STATUS: OFFICIAL
-#$ KEYWORDS: OMPHOBBY, M7
-#$ AUTHOR: Jiawen Bao
-
-#$ PARSER: MARKED
-#$ DESCRIPTION: Profile for the OMPHOBBY M7:
-#$ DESCRIPTION: -----------
-#$ DESCRIPTION: 
-#$ DESCRIPTION: Description:
-#$ DESCRIPTION: -----------
-#$ DESCRIPTION: This is a preset profile for the OMPHOBBY M7, setting the governor headspeed to 2200 RPM.
-#$ DESCRIPTION:
-#$ DESCRIPTION: Created by:
-#$ DESCRIPTION: -----------
-#$ DESCRIPTION: Jiawen Bao
-#$ DESCRIPTION:
-
-#$ INCLUDE: presets/4.4/profile/defaults.txt
-
 set roll_p_gain = 35
 set roll_i_gain = 120
 set roll_d_gain = 5

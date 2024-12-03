@@ -1,0 +1,175 @@
+#$ TITLE: OMPHOBBY M7 Profiles by Jonas Wackershauser - TEST
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: PROFILE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: OMPHOBBY, M7
+#$ AUTHOR: Jonas Wackershauser
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Profiles for a 12S OMPHOBBY M7:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: This is a high headspeed version of my M7 tune.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Created by:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Jonas Wackershauser @Johnny31297
+#$ DESCRIPTION:
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Hey there!<br><br>As the creator of the OMPHOBBY M7 and avid Rotorflight 2 user, I want to share my personal Rotorflight 2 tune for my models with you. This is a highly tuned 3D setup for the M7, featuring great stability, excellent setpoint tracking and very precise and locked-in response. Be aware that this setup is specifically tuned for my chosen components, and that it might not perform optimally if you fly different components. You can, however, use it as a baseline for your own tune. As always, first verify that your filters are working correctly, then proceed onto the PIDFOB numbers.
+#$ DESCRIPTION:
+#$ DESCRIPTION:  
+#$ DESCRIPTION: |Item|Component|
+#$ DESCRIPTION: |:---|:--------|
+#$ DESCRIPTION: |**Helicopter:**|     OMPHOBBY M7|
+#$ DESCRIPTION: |**Main Rotor Blades:**|   RotorTech 700mm Ultimate|
+#$ DESCRIPTION: |**Tail Rotor Blades:**| RotorTech 106mm Ultimate|
+#$ DESCRIPTION: |**Swash Servos:**| KST HLS X20-2208|
+#$ DESCRIPTION: |**Yaw Servo:**| KST HLS X20-1035|
+#$ DESCRIPTION: |**FBL/Receiver:**| RadioMaster NEXUS & RP3-H|
+#$ DESCRIPTION: |**Motor:**| SUNNYSKY R4530-518KV|
+#$ DESCRIPTION: |**Pinion:**| 13t|
+#$ DESCRIPTION: |**ESC:**| Scorpion Tribunus II 14-200A|
+#$ DESCRIPTION: |**Battery:**| OMPHOBBY 12S 5100mAh 70C|
+#$ DESCRIPTION: |**Backup:**| OMPHOBBY 25F 8V4 Capacitors|
+#$ DESCRIPTION: |**Dampers:**| 90° Shore Rubber, 0.2mm Compression per side|
+#$ DESCRIPTION: |**Servo Arms:**| OMPHOBBY 18mm Aluminium|
+#$ DESCRIPTION: |**Geometry:**| 32mm 3D|
+#$ DESCRIPTION: |**ESC Setup:**| BEC 8V2, ESC Governor Default Values|
+#$ DESCRIPTION: |**Tx Settings: ELRS 500Hz Wide|
+#$ DESCRIPTION:
+#$ DESCRIPTION: |Info|Value|
+#$ DESCRIPTION: |:---|:----|
+#$ DESCRIPTION: |**Revision Date:**|       03.07.2024|
+#$ DESCRIPTION: |**Rotorflight Version:**|    2.0.0 Release|
+#$ DESCRIPTION: |**Rotorflight Hardware:**|   RadioMaster NEXUS|
+#$ DESCRIPTION: |**Tune Attributes:**|     Precise, Locked-In, 3D, Robotic|
+
+#$ INCLUDE: presets/4.4/profile/defaults.txt
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 1
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 1
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 1
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 1
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 1
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 2
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 2
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 2
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 2
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 2
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 3
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 3
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 3
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 3
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 3
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 4
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 4
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 4
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 4
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 4
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 5
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 5
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 5
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 5
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 5
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Profile 6
+    #$ OPTION BEGIN (CHECKED): None
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1400 RPM
+    profile 6
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1400-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1850 RPM
+    profile 6
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/1850-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2150 RPM
+    profile 6
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/2150-rpm.profile
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Autorotation
+    profile 6
+#$ INCLUDE: presets/4.4/profile/omphobby/jw-m7-hhs/autorotation.profile
+    #$ OPTION END
+#$ OPTION_GROUP END

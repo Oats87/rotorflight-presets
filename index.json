@@ -41,6 +41,15 @@
       "END_OPTION_GROUP_DIRECTIVE": "option_group end",
       "EXCLUSIVE_OPTION_GROUP": "(exclusive)"
     },
+    "ProfileOptionsDirectives": {
+      "PROFILE_OPTION_DIRECTIVE": "profileoption",
+      "PROFILE_BEGIN_OPTION_DIRECTIVE": "profileoption begin",
+      "END_PROFILE_OPTION_DIRECTIVE": "profileoption end",
+      "PROFILE_OPTION_CHECKED": "(checked)",
+      "PROFILE_OPTION_UNCHECKED": "(unchecked)",
+      "BEGIN_PROFILE_OPTION_GROUP_DIRECTIVE": "profileoption_group begin",
+      "END_PROFILE_OPTION_GROUP_DIRECTIVE": "profileoption_group end"
+    },
     "PresetStatusEnum": [
       "OFFICIAL",
       "COMMUNITY",
@@ -151,7 +160,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "7f8563e7561061b8335cf15ba054e75193859de76cfc99f7df47f99e2f7eb82a",
+      "hash": "3026cdd43eab81fb1e0ce8bd1f6c8b299a3679ddc562272327449fa8469c1528",
       "title": "Rotorflight 2.1 Profile Defaults",
       "firmware_version": [
         "4.4"
@@ -170,8 +179,8 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/profile/omphobby/m7-etocii.txt",
-      "hash": "82213324a9480d214a0e55c8904349586ed6e7482f12be563f9cb7ea8839e0fa",
+      "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii.txt",
+      "hash": "4db3a3e0555c3067adc5ef8a139873d290e6c02295eb9f569e1aa2e8931d016e",
       "title": "OMPHOBBY M7 by etocii",
       "firmware_version": [
         "4.4",
@@ -187,9 +196,9 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.4/profile/omphobby/m7-jonas.txt",
-      "hash": "f752b9e98f1ad99b0084c8e634c031a7d1b7477e9365264f8e8a2b97cd65269a",
-      "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser",
+      "fullPath": "presets/4.4/profile/omphobby/jw-m7-hhs/m7-test-jonas.txt",
+      "hash": "d48b3be4037f8910d5a059d29bd107cc578f8e8a74563fb593c9a2beef3bfe2e",
+      "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser - TEST",
       "firmware_version": [
         "4.4",
         "4.5"
@@ -204,8 +213,8 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.4/profile/omphobby/m7-light-jonas.txt",
-      "hash": "c472132b2e0b14569c8a466755516b736092482c038ba8ef3f7a17dc3f4e5f52",
+      "fullPath": "presets/4.4/profile/omphobby/jw-m7-light/m7-light-jonas.txt",
+      "hash": "8b2585a63596a0fd0b19e3932d3e3c5e388fb58214c5b2916de8ca1e76e11a37",
       "title": "OMPHOBBY M7 Light by Jonas Wackershauser",
       "firmware_version": [
         "4.4",
@@ -217,23 +226,6 @@
         "OMPHOBBY",
         "M7",
         "LIGHT"
-      ],
-      "author": "Jonas Wackershauser",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.4/profile/omphobby/m7-test/m7-test-jonas.txt",
-      "hash": "dcd4ef1dab431e075338914a1ee83d6d77270863f77a30b7753503cb1dfc52f1",
-      "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser",
-      "firmware_version": [
-        "4.4",
-        "4.5"
-      ],
-      "category": "PROFILE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "OMPHOBBY",
-        "M7"
       ],
       "author": "Jonas Wackershauser",
       "priority": 1000000000000
