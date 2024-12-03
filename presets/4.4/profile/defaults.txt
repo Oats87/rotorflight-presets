@@ -11,7 +11,7 @@
 
 #$ OPTION_GROUP BEGIN: Reset Profiles
     #$ OPTION BEGIN (UNCHECKED): Profile 1
-    profile 1
+    profile 0
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO
@@ -117,7 +117,7 @@
     set gov_min_throttle = 10
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 2
-    profile 2
+    profile 1
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO
@@ -223,7 +223,7 @@
     set gov_min_throttle = 10
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 3
-    profile 3
+    profile 2
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO
@@ -329,7 +329,7 @@
     set gov_min_throttle = 10
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 4
-    profile 4
+    profile 3
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO
@@ -435,7 +435,7 @@
     set gov_min_throttle = 10
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 5
-    profile 5
+    profile 4
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO
@@ -541,7 +541,7 @@
     set gov_min_throttle = 10
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): Profile 6
-    profile 6
+    profile 5
     set pid_mode = 3
     set pid_dterm_mode = GYRO
     set pid_dterm_mode_yaw = GYRO

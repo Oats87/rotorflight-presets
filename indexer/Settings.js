@@ -44,16 +44,6 @@ const OptionsDirectives = {
     END_OPTION_GROUP_DIRECTIVE: "option_group end",
     EXCLUSIVE_OPTION_GROUP: "(exclusive)",
 }
-// ProfileOptions are usable for both profile and rateprofile, and provide a range of 1-6
-const ProfileOptionDirectives = {
-    PROFILE_OPTION_DIRECTIVE: "profileoption",
-    PROFILE_BEGIN_OPTION_DIRECTIVE: "profileoption begin",
-    END_PROFILE_OPTION_DIRECTIVE: "profileoption end",
-    PROFILE_OPTION_CHECKED: "(checked)",
-    PROFILE_OPTION_UNCHECKED: "(unchecked)",
-    BEGIN_PROFILE_OPTION_GROUP_DIRECTIVE: "profileoption_group begin",
-    END_PROFILE_OPTION_GROUP_DIRECTIVE: "profileoption_group end",
-}
 
 const settings = {
     MetapropertyDirective: "#$",
@@ -64,8 +54,6 @@ const settings = {
     MetadataTypes: Object.freeze(MetadataTypes),
 
     OptionsDirectives : Object.freeze(OptionsDirectives),
-
-    ProfileOptionsDirectives : Object.freeze(ProfileOptionDirectives),
 
     PresetStatusEnum : Object.freeze(PresetStatusEnum),
     ParserEnum : Object.freeze(ParserEnum),

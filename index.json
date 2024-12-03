@@ -41,15 +41,6 @@
       "END_OPTION_GROUP_DIRECTIVE": "option_group end",
       "EXCLUSIVE_OPTION_GROUP": "(exclusive)"
     },
-    "ProfileOptionsDirectives": {
-      "PROFILE_OPTION_DIRECTIVE": "profileoption",
-      "PROFILE_BEGIN_OPTION_DIRECTIVE": "profileoption begin",
-      "END_PROFILE_OPTION_DIRECTIVE": "profileoption end",
-      "PROFILE_OPTION_CHECKED": "(checked)",
-      "PROFILE_OPTION_UNCHECKED": "(unchecked)",
-      "BEGIN_PROFILE_OPTION_GROUP_DIRECTIVE": "profileoption_group begin",
-      "END_PROFILE_OPTION_GROUP_DIRECTIVE": "profileoption_group end"
-    },
     "PresetStatusEnum": [
       "OFFICIAL",
       "COMMUNITY",
@@ -160,7 +151,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "3026cdd43eab81fb1e0ce8bd1f6c8b299a3679ddc562272327449fa8469c1528",
+      "hash": "c2c2c375cda8c7bd4c51793eac347f0fe62a1ae71186fbfcbce18b420c1a8534",
       "title": "Rotorflight 2.1 Profile Defaults",
       "firmware_version": [
         "4.4"
@@ -180,7 +171,7 @@
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii.txt",
-      "hash": "4db3a3e0555c3067adc5ef8a139873d290e6c02295eb9f569e1aa2e8931d016e",
+      "hash": "78a73ad081666ace24e50a4c24d46231577a53e46a9c24de830016b944a66854",
       "title": "OMPHOBBY M7 by etocii",
       "firmware_version": [
         "4.4",
@@ -197,7 +188,7 @@
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/jw-m7-hhs/m7-test-jonas.txt",
-      "hash": "d48b3be4037f8910d5a059d29bd107cc578f8e8a74563fb593c9a2beef3bfe2e",
+      "hash": "7cc7956c9748a93c8d4aefd43134559ae23602ae94c335071ac681731bcbcabf",
       "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser - TEST",
       "firmware_version": [
         "4.4",
@@ -214,7 +205,7 @@
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/jw-m7-light/m7-light-jonas.txt",
-      "hash": "8b2585a63596a0fd0b19e3932d3e3c5e388fb58214c5b2916de8ca1e76e11a37",
+      "hash": "b9451a61e73959d22ceb84d8e05bdf1c03c0218245cbbb306bac7162f4564f4e",
       "title": "OMPHOBBY M7 Light by Jonas Wackershauser",
       "firmware_version": [
         "4.4",

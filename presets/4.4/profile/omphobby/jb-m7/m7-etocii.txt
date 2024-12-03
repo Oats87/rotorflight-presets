@@ -25,7 +25,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 1
+    profile 0
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
@@ -34,7 +34,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 2
+    profile 1
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
@@ -43,7 +43,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 3
+    profile 2
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
@@ -52,7 +52,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 4
+    profile 3
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
@@ -61,7 +61,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 5
+    profile 4
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
@@ -70,7 +70,7 @@
     #$ OPTION BEGIN (CHECKED): None
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2200 RPM
-    profile 6
+    profile 5
 #$ INCLUDE: presets/4.4/profile/omphobby/jb-m7/2200-rpm.profile
     #$ OPTION END
 #$ OPTION_GROUP END
