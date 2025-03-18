@@ -66,6 +66,7 @@ const settings = {
         firmware_version:     {type: MetadataTypes.STRING_ARRAY,     optional: false  },
         category:             {type: MetadataTypes.PRESET_CATEGORY,  optional: false  },
         status:               {type: MetadataTypes.PRESET_STATUS,    optional: false  },
+        board_name:           {type: MetadataTypes.STRING_ARRAY,     optional: true   },
         author:               {type: MetadataTypes.STRING,           optional: true   },
         description:          {type: MetadataTypes.STRING_ARRAY,     optional: true   },
         include:              {type: MetadataTypes.FILE_PATH_ARRAY,  optional: true   },

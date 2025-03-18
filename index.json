@@ -69,6 +69,10 @@
         "type": "PRESET_STATUS",
         "optional": false
       },
+      "board_name": {
+        "type": "STRING_ARRAY",
+        "optional": true
+      },
       "author": {
         "type": "STRING",
         "optional": true
@@ -129,9 +133,11 @@
       "4.5"
     ],
     "category": [
-      "PROFILE"
+      "PROFILE",
+      "REMAPPING"
     ],
     "author": [
+      "FlyDragonRC",
       "Jiawen Bao",
       "Jonas Wackershauser",
       "Rotorflight"
@@ -140,12 +146,17 @@
       "basic",
       "default",
       "defaults",
+      "fbus",
       "LIGHT",
       "M7",
       "OMPHOBBY",
       "pid",
+      "remap",
       "reset",
       "tune"
+    ],
+    "board_name": [
+      "FLYDRAGONF722_V2"
     ]
   },
   "presets": [
@@ -220,6 +231,25 @@
       ],
       "author": "Jonas Wackershauser",
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/fd-remap-sbus.txt",
+      "hash": "de3db70598ca6810c8457a379cfbf41ac8837e8b52bde9285e113b9c29de5d1d",
+      "title": "FlyDragon F722V2 FBus Servo 5 Remap",
+      "firmware_version": [
+        "4.4"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "remap",
+        "fbus"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
     }
   ]
 }

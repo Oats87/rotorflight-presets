@@ -14,6 +14,7 @@ class IndexContent
         this.uniqueValues.category = this._getUniqueValues(presetFilesArray, "category");
         this.uniqueValues.author = this._getUniqueValues(presetFilesArray, "author");
         this.uniqueValues.keywords = this._getUniqueValues(presetFilesArray, "keywords");
+        this.uniqueValues.board_name = this._getUniqueValues(presetFilesArray, "board_name");
     }
 
     _getUniqueValues(presetFilesArray, property)
