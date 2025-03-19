@@ -181,6 +181,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii-or.txt",
+      "hash": "89a6062dd815502b285e177598fd269ea777649a384d91bccf52eb93c1b37cd6",
+      "title": "OMPHOBBY M7 by etocii with options review required",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "PROFILE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "OMPHOBBY",
+        "M7"
+      ],
+      "author": "Jiawen Bao",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii.txt",
       "hash": "78a73ad081666ace24e50a4c24d46231577a53e46a9c24de830016b944a66854",
       "title": "OMPHOBBY M7 by etocii",
