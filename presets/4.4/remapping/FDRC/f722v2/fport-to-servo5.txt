@@ -1,11 +1,12 @@
-#$ TITLE: FlyDragon F722V2 FBus Servo 5 Remap
+#$ TITLE: FlyDragon F722V2/F722V2.2 F.Port -> Servo 5 Remap
 #$ FIRMWARE_VERSION: 4.4
 #$ BOARD_NAME: FLYDRAGONF722_V2
+#$ BOARD_NAME: FLYDRAGONF722_V2_2
 #$ CATEGORY: REMAPPING
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: remap, fbus
+#$ KEYWORDS: fbus, f.port
 #$ AUTHOR: FlyDragonRC
-#$ DESCRIPTION: Remaps the FBUS port to Servo 5
+#$ DESCRIPTION: Remaps F.Port to Servo 5
 #$ PRIORITY: 0
 
 resource SERIAL_TX 2 none

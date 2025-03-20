@@ -139,51 +139,32 @@
     "author": [
       "FlyDragonRC",
       "Jiawen Bao",
-      "Jonas Wackershauser",
-      "Rotorflight"
+      "Jonas Wackershauser"
     ],
     "keywords": [
-      "basic",
-      "default",
-      "defaults",
+      "bec",
+      "ext",
+      "f.port",
       "fbus",
       "LIGHT",
       "M7",
       "OMPHOBBY",
-      "pid",
-      "remap",
-      "reset",
-      "tune"
+      "rpm-e",
+      "rpm-s",
+      "s.bus",
+      "sbus",
+      "voltage"
     ],
     "board_name": [
-      "FLYDRAGONF722_V2"
+      "FLYDRAGONF722_V2",
+      "FLYDRAGONF722_V2_2"
     ]
   },
   "presets": [
     {
-      "fullPath": "presets/4.4/profile/defaults.txt",
-      "hash": "c2c2c375cda8c7bd4c51793eac347f0fe62a1ae71186fbfcbce18b420c1a8534",
-      "title": "Rotorflight 2.1 Profile Defaults",
-      "firmware_version": [
-        "4.4"
-      ],
-      "category": "PROFILE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "tune",
-        "pid",
-        "basic",
-        "default"
-      ],
-      "author": "Rotorflight",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii-or.txt",
-      "hash": "89a6062dd815502b285e177598fd269ea777649a384d91bccf52eb93c1b37cd6",
-      "title": "OMPHOBBY M7 by etocii with options review required",
+      "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii.txt",
+      "hash": "a824a81afe9978aeb5098d3bc15abbb2ead078cdd359437a690600cc596b3206",
+      "title": "OMPHOBBY M7 by etocii",
       "firmware_version": [
         "4.4",
         "4.5"
@@ -199,25 +180,8 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.4/profile/omphobby/jb-m7/m7-etocii.txt",
-      "hash": "78a73ad081666ace24e50a4c24d46231577a53e46a9c24de830016b944a66854",
-      "title": "OMPHOBBY M7 by etocii",
-      "firmware_version": [
-        "4.4",
-        "4.5"
-      ],
-      "category": "PROFILE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "OMPHOBBY",
-        "M7"
-      ],
-      "author": "Jiawen Bao",
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.4/profile/omphobby/jw-m7-hhs/m7-test-jonas.txt",
-      "hash": "7cc7956c9748a93c8d4aefd43134559ae23602ae94c335071ac681731bcbcabf",
+      "hash": "15b448145fd708324fdff962e05c656fd4d32e44d0a0e1f856015e136c5691d6",
       "title": "OMPHOBBY M7 Profiles by Jonas Wackershauser - TEST",
       "firmware_version": [
         "4.4",
@@ -230,11 +194,12 @@
         "M7"
       ],
       "author": "Jonas Wackershauser",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.4/profile/omphobby/jw-m7-light/m7-light-jonas.txt",
-      "hash": "b9451a61e73959d22ceb84d8e05bdf1c03c0218245cbbb306bac7162f4564f4e",
+      "hash": "cbdd8a35d39ef5e4357890e15025518b91785b1f331fb6371395ae5dd411f508",
       "title": "OMPHOBBY M7 Light by Jonas Wackershauser",
       "firmware_version": [
         "4.4",
@@ -248,12 +213,13 @@
         "LIGHT"
       ],
       "author": "Jonas Wackershauser",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/fd-remap-sbus.txt",
-      "hash": "de3db70598ca6810c8457a379cfbf41ac8837e8b52bde9285e113b9c29de5d1d",
-      "title": "FlyDragon F722V2 FBus Servo 5 Remap",
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/ext-volt-to-bec.txt",
+      "hash": "dd3ff6286dca2208919240c3a8071a5ce08c80be7a054c3db98f78e4912320b0",
+      "title": "FlyDragon F722V2 EXT Voltage -> BEC",
       "firmware_version": [
         "4.4"
       ],
@@ -263,8 +229,87 @@
       "category": "REMAPPING",
       "status": "COMMUNITY",
       "keywords": [
-        "remap",
-        "fbus"
+        "ext",
+        "voltage",
+        "bec"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/fport-to-servo5.txt",
+      "hash": "12548f2ea3b30e5e77e435f3126d586210c266bda7af1c97118d1d9eea72d1fa",
+      "title": "FlyDragon F722V2/F722V2.2 F.Port -> Servo 5 Remap",
+      "firmware_version": [
+        "4.4"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2",
+        "FLYDRAGONF722_V2_2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "fbus",
+        "f.port"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/rpm-e.txt",
+      "hash": "c6254c47c37e86d6a174994eba4f0f00e5459e25c55cb520abec3c860be90ae9",
+      "title": "FlyDragon F722V2/F722V2.2 Enable RPM-E",
+      "firmware_version": [
+        "4.4"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2",
+        "FLYDRAGONF722_V2_2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rpm-e"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/rpm-s.txt",
+      "hash": "0375fd67da70aed1092c3cc4bb171c36d68effc82b9bbfcb1d11aea438daa9de",
+      "title": "FlyDragon F722V2/F722V2.2 Enable RPM-S",
+      "firmware_version": [
+        "4.4"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2",
+        "FLYDRAGONF722_V2_2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rpm-s"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/sbus-to-servo5.txt",
+      "hash": "6050f47a404ca5ca8c9f40cefacf18318364d5579edd8a7cf57442b93148b894",
+      "title": "FlyDragon F722V2/F722V2.2 SBUS -> Servo 5 Remap",
+      "firmware_version": [
+        "4.4"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2",
+        "FLYDRAGONF722_V2_2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "sbus",
+        "s.bus"
       ],
       "author": "FlyDragonRC",
       "priority": 0
