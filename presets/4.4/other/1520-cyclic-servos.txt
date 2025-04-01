@@ -1,0 +1,74 @@
+#$ TITLE: Basic Servo Setup
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: servos
+#$ AUTHOR: Oats87
+#$ FORCE_OPTIONS_REVIEW: true
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Servo Setup
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: This preset will configure your servos with your desired settings.
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Cyclic Servos
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 333 Hz w/ Geometry Correction
+    servo 1 1500 -700 700 500 500 333 0 2
+    servo 2 1500 -700 700 500 500 333 0 2
+    servo 3 1500 -700 700 500 500 333 0 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 560 Hz w/ Geometry Correction
+    servo 1 1500 -700 700 500 500 560 0 2
+    servo 2 1500 -700 700 500 500 560 0 2
+    servo 3 1500 -700 700 500 500 560 0 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 333 Hz w/ Geometry Correction
+    servo 1 750 -350 350 250 250 333 0 2
+    servo 2 750 -350 350 250 250 333 0 2
+    servo 3 750 -350 350 250 250 333 0 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 560 Hz w/ Geometry Correction
+    servo 1 750 -350 350 250 250 560 0 2
+    servo 2 750 -350 350 250 250 560 0 2
+    servo 3 750 -350 350 250 250 560 0 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 333 Hz w/o Geometry Correction
+    servo 1 1500 -700 700 500 500 333 0 0
+    servo 2 1500 -700 700 500 500 333 0 0
+    servo 3 1500 -700 700 500 500 333 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 560 Hz w/o Geometry Correction
+    servo 1 1500 -700 700 500 500 560 0 0
+    servo 2 1500 -700 700 500 500 560 0 0
+    servo 3 1500 -700 700 500 500 560 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 333 Hz w/o Geometry Correction
+    servo 1 750 -350 350 250 250 333 0 0
+    servo 2 750 -350 350 250 250 333 0 0
+    servo 3 750 -350 350 250 250 333 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 560 Hz w/o Geometry Correction
+    servo 1 750 -350 350 250 250 560 0 0
+    servo 2 750 -350 350 250 250 560 0 0
+    servo 3 750 -350 350 250 250 560 0 0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Tail Servo
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 333 Hz
+    servo 4 1500 -700 700 500 500 333 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1520 µS @ 560 Hz
+    servo 4 1500 -700 700 500 500 560 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 333 Hz
+    servo 4 750 -350 350 250 250 333 0 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 760 µS @ 560 Hz
+    servo 4 750 -350 350 250 250 560 0 0
+    #$ OPTION END
+#$ OPTION_GROUP END

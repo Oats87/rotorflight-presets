@@ -1,0 +1,58 @@
+#$ TITLE: OMPHOBBY M7 - etocii's 2200 RPM Profile
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: PROFILE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: OMPHOBBY, M7
+#$ AUTHOR: etocii
+#$ FORCE_OPTIONS_REVIEW: true
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: etocii's Profile for the OMPHOBBY M7:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: This is a preset profile for the OMPHOBBY M7, setting the governor headspeed to 2200 RPM.
+#$ DESCRIPTION:
+
+#$ INCLUDE: presets/4.4/profile/profile-helper.include
+set roll_p_gain = 35
+set roll_i_gain = 120
+set roll_d_gain = 5
+set roll_f_gain = 105
+set roll_b_gain = 0
+set pitch_p_gain = 98
+set pitch_i_gain = 120
+set pitch_d_gain = 46
+set pitch_f_gain = 105
+set pitch_b_gain = 10
+set yaw_p_gain = 97
+set yaw_i_gain = 181
+set yaw_d_gain = 10
+set yaw_b_gain = 15
+set yaw_f_gain = 12
+
+set error_rotation = ON
+set error_decay_time_ground = 25
+set iterm_relax_type = RPY
+set iterm_relax_cutoff = 15,12,12
+set error_limit = 35,35,45
+set offset_limit = 50,50
+set pitch_o_gain = 27
+set roll_o_gain = 27
+
+set pitch_collective_ff_gain = 0
+set cyclic_cross_coupling_gain = 17
+set cyclic_cross_coupling_ratio = 3
+set cyclic_cross_coupling_cutoff = 15
+set error_decay_time_cyclic = 15
+set error_decay_limit_cyclic = 12
+
+set yaw_cw_stop_gain = 100
+set yaw_ccw_stop_gain = 65
+set yaw_precomp_cutoff = 20
+set yaw_cyclic_ff_gain = 15
+set yaw_collective_ff_gain = 46
+set yaw_collective_dynamic_gain = 0
+set yaw_collective_dynamic_decay = 30

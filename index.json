@@ -129,23 +129,31 @@
   },
   "uniqueValues": {
     "firmware_version": [
-      "4.4"
+      "4.4",
+      "4.5"
     ],
     "category": [
+      "OTHER",
+      "PROFILE",
       "REMAPPING"
     ],
     "author": [
-      "FlyDragonRC"
+      "etocii",
+      "FlyDragonRC",
+      "Oats87"
     ],
     "keywords": [
       "bec",
       "ext",
       "f.port",
       "fbus",
+      "M7",
+      "OMPHOBBY",
       "rpm-e",
       "rpm-s",
       "s.bus",
       "sbus",
+      "servos",
       "voltage"
     ],
     "board_name": [
@@ -154,6 +162,41 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.4/other/1520-cyclic-servos.txt",
+      "hash": "3f1789e7adc113ae8098781fe15b8d0d46b133bd83f48e59028255ead82fd2e0",
+      "title": "Basic Servo Setup",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "servos"
+      ],
+      "author": "Oats87",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/profile/etocii/m7-2200.txt",
+      "hash": "906e8f6fbcd28bf5c268aa0606d4332e387100daa1f5735b5bed5fc6b4e3a6c4",
+      "title": "OMPHOBBY M7 - etocii's 2200 RPM Profile",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "PROFILE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OMPHOBBY",
+        "M7"
+      ],
+      "author": "etocii",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/ext-volt-to-bec.txt",
       "hash": "dd3ff6286dca2208919240c3a8071a5ce08c80be7a054c3db98f78e4912320b0",
