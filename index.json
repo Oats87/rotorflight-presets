@@ -163,9 +163,9 @@
   },
   "presets": [
     {
-      "fullPath": "presets/4.4/other/1520-cyclic-servos.txt",
-      "hash": "3f1789e7adc113ae8098781fe15b8d0d46b133bd83f48e59028255ead82fd2e0",
-      "title": "Basic Servo Setup",
+      "fullPath": "presets/4.4/other/servo-setup.txt",
+      "hash": "e9b7cdef8af94fcdd1ad58a1f2d2b86040bc716db005d1461c98d752ffb99c99",
+      "title": "Servo Setup",
       "firmware_version": [
         "4.4",
         "4.5"
