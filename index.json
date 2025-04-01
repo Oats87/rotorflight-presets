@@ -164,7 +164,7 @@
   "presets": [
     {
       "fullPath": "presets/4.4/other/servo-setup.txt",
-      "hash": "08a21cf08f84ff947fe1f5d95a2264ca104d22c9f33b5607b00686acaa2ebc2d",
+      "hash": "11c8993908f55b785bd3a930030438fbf1275e60f4ad2086c14809bc04c2eceb",
       "title": "Servo Setup",
       "firmware_version": [
         "4.4",
