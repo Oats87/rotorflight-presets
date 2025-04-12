@@ -1,13 +1,13 @@
-#$ TITLE: FlyDragon F722V2/F722V2.2 Enable RPM-S
+#$ TITLE: FlyDragon F722V2/F722V2.2 FC Orientation Wires Forward
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ BOARD_NAME: FLYDRAGONF722_V2
 #$ BOARD_NAME: FLYDRAGONF722_V2_2
 #$ CATEGORY: REMAPPING
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: rpm-s
+#$ KEYWORDS: wires forward
 #$ AUTHOR: FlyDragonRC
-#$ DESCRIPTION: Enables the RPM-S Port for RPM Input
+#$ DESCRIPTION: Sets FC Orientation so the wires are facing forward
 #$ PRIORITY: 0
 
-resource FREQ 1 A15
+set align_board_yaw = 180

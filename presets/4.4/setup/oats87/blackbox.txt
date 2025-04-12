@@ -1,0 +1,37 @@
+#$ TITLE: Blackbox Setup
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: Blackbox
+#$ AUTHOR: Oats87
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Oats87's Blackbox Setup - Armed
+
+set blackbox_mode = ARMED
+set blackbox_initial_erase_kb = 32768
+set blackbox_rolling_erase = ON
+
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Blackbox Rate
+    #$ OPTION BEGIN (UNCHECKED): 10Hz
+    set blackbox_rate_denom = 320
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 25Hz
+    set blackbox_rate_denom = 128
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 50Hz
+    set blackbox_rate_denom = 64
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 100Hz
+    set blackbox_rate_denom = 32
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 267Hz
+    set blackbox_rate_denom = 12
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): 533Hz
+    set blackbox_rate_denom = 6
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 1067Hz
+    set blackbox_rate_denom = 3
+    #$ OPTION END
+#$ OPTION_GROUP END

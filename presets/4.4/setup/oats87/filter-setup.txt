@@ -1,0 +1,28 @@
+#$ TITLE: Servo Setup
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: filter
+#$ AUTHOR: Oats87
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Oats87 Filter Setup
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Oats87's Filters
+
+feature -DYN_NOTCH
+feature RPM_FILTER
+
+set gyro_lpf1_type = NONE
+set gyro_lpf1_static_hz = 0
+
+set gyro_rpm_notch_source_pitch = 11,12,13,14,21,22,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_notch_q_pitch = 80,30,80,60,60,50,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_notch_source_roll = 11,12,13,14,21,22,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_notch_q_roll = 80,30,80,60,60,50,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_notch_source_yaw = 11,12,13,14,21,22,0,0,0,0,0,0,0,0,0,0
+set gyro_rpm_notch_q_yaw = 80,40,80,80,60,50,0,0,0,0,0,0,0,0,0,0
