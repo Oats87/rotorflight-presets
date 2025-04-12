@@ -130,8 +130,7 @@
   "uniqueValues": {
     "firmware_version": [
       "4.4",
-      "4.5",
-      "4.5.0-RC2"
+      "4.5"
     ],
     "category": [
       "OTHER",
@@ -313,40 +312,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/setup/oats87/blackbox.txt",
-      "hash": "9c1b86ad0c97e60f9c6486d3f3a708dd6b3976ae57c7e67837d2c4f15a2a6b08",
-      "title": "Blackbox Setup",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "Blackbox"
-      ],
-      "author": "Oats87",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.4/setup/oats87/filter-setup.txt",
-      "hash": "64dc02bfceffb1be8a4cefeddc17cee61731647428636879a84ebcd3f9dbe902",
-      "title": "Servo Setup",
-      "firmware_version": [
-        "4.4",
-        "4.5"
-      ],
-      "category": "OTHER",
-      "status": "COMMUNITY",
-      "keywords": [
-        "filter"
-      ],
-      "author": "Oats87",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.4/setup/oats87/rx-setup.txt",
-      "hash": "d4aad967c77511dcbc2eb1bc8de32231035be10bcc6b891982e6ab1b312be7ed",
-      "title": "RX Setup",
+      "hash": "90c8d5ac09e93454444fa903ccb3bc93d7ced7a78c8f7520f971690586c20696",
+      "title": "Oats87's RX Setup",
       "firmware_version": [
         "4.4",
         "4.5"
@@ -379,10 +347,10 @@
     },
     {
       "fullPath": "presets/4.5/profile/rc-upgrade-hsi-fix.txt",
-      "hash": "114e5117521294b4a2236f8f9063a8a69f6f8a2e88474b62cc37bfcb9a03c349",
+      "hash": "113d6a9f502140ba7dc1b65288911e47bdd7fe3ee9a446496c497de13dead4c2",
       "title": "4.5.0-RC2 HSI Upgrade Fix",
       "firmware_version": [
-        "4.5.0-RC2"
+        "4.5"
       ],
       "category": "PROFILE",
       "status": "OFFICIAL",
@@ -408,6 +376,36 @@
       "author": "Oats87",
       "force_options_review": true,
       "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.5/setup/oats87/blackbox.txt",
+      "hash": "2d9c5507e64e3c4192ff4f285d007841515f3b27c8df1075181a09a017491f98",
+      "title": "Oats87's Blackbox Setup",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Blackbox"
+      ],
+      "author": "Oats87",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/setup/oats87/filter-setup.txt",
+      "hash": "484930dbe4d80b8d5f33936deca9534b73fa978b46a3b05eb68fbd22a13f6ff8",
+      "title": "Oats87's Filter Setup",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter"
+      ],
+      "author": "Oats87",
+      "priority": 0
     }
   ]
 }
