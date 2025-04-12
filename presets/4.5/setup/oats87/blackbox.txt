@@ -1,4 +1,4 @@
-#$ TITLE: Blackbox Setup
+#$ TITLE: Oats87's Blackbox Setup
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY

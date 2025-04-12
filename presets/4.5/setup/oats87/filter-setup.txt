@@ -1,5 +1,4 @@
-#$ TITLE: Servo Setup
-#$ FIRMWARE_VERSION: 4.4
+#$ TITLE: Oats87's Filter Setup
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: COMMUNITY
