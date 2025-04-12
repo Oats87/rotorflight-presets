@@ -130,11 +130,13 @@
   "uniqueValues": {
     "firmware_version": [
       "4.4",
-      "4.5"
+      "4.5",
+      "4.5.0-RC2"
     ],
     "category": [
       "OTHER",
       "PROFILE",
+      "RATEPROFILE",
       "REMAPPING"
     ],
     "author": [
@@ -144,17 +146,24 @@
     ],
     "keywords": [
       "bec",
+      "Blackbox",
       "ext",
       "f.port",
       "fbus",
+      "filter",
+      "hsi",
       "M7",
       "OMPHOBBY",
+      "rateprofile",
+      "receiver",
       "rpm-e",
       "rpm-s",
+      "rx",
       "s.bus",
       "sbus",
       "servos",
-      "voltage"
+      "voltage",
+      "wires forward"
     ],
     "board_name": [
       "FLYDRAGONF722_V2",
@@ -162,23 +171,6 @@
     ]
   },
   "presets": [
-    {
-      "fullPath": "presets/4.4/other/servo-setup.txt",
-      "hash": "11c8993908f55b785bd3a930030438fbf1275e60f4ad2086c14809bc04c2eceb",
-      "title": "Servo Setup",
-      "firmware_version": [
-        "4.4",
-        "4.5"
-      ],
-      "category": "OTHER",
-      "status": "OFFICIAL",
-      "keywords": [
-        "servos"
-      ],
-      "author": "Oats87",
-      "force_options_review": true,
-      "priority": 0
-    },
     {
       "fullPath": "presets/4.4/profile/etocii/m7-2200.txt",
       "hash": "906e8f6fbcd28bf5c268aa0606d4332e387100daa1f5735b5bed5fc6b4e3a6c4",
@@ -199,10 +191,11 @@
     },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/ext-volt-to-bec.txt",
-      "hash": "dd3ff6286dca2208919240c3a8071a5ce08c80be7a054c3db98f78e4912320b0",
+      "hash": "53f2b18828066779f17041e8022cbccc121c1a3dec2bd49da1ae921e3a70e8fd",
       "title": "FlyDragon F722V2 EXT Voltage -> BEC",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "board_name": [
         "FLYDRAGONF722_V2"
@@ -219,10 +212,11 @@
     },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/fport-to-servo5.txt",
-      "hash": "12548f2ea3b30e5e77e435f3126d586210c266bda7af1c97118d1d9eea72d1fa",
+      "hash": "df4f894847604bb1af8ffe361c48e7a02a1f7a23a8f556e0ca01c7630d0d4053",
       "title": "FlyDragon F722V2/F722V2.2 F.Port -> Servo 5 Remap",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "board_name": [
         "FLYDRAGONF722_V2",
@@ -239,10 +233,11 @@
     },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/rpm-e.txt",
-      "hash": "c6254c47c37e86d6a174994eba4f0f00e5459e25c55cb520abec3c860be90ae9",
+      "hash": "799876e1c5c13f615020255d1f270c546341fa3a4dd724853101ea13c1842770",
       "title": "FlyDragon F722V2/F722V2.2 Enable RPM-E",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "board_name": [
         "FLYDRAGONF722_V2",
@@ -258,10 +253,11 @@
     },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/rpm-s.txt",
-      "hash": "0375fd67da70aed1092c3cc4bb171c36d68effc82b9bbfcb1d11aea438daa9de",
+      "hash": "b44fdd86bffa967423c370d2e51d25d2fbaef6072652a5701c2c276e38222fe4",
       "title": "FlyDragon F722V2/F722V2.2 Enable RPM-S",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "board_name": [
         "FLYDRAGONF722_V2",
@@ -277,10 +273,11 @@
     },
     {
       "fullPath": "presets/4.4/remapping/FDRC/f722v2/sbus-to-servo5.txt",
-      "hash": "6050f47a404ca5ca8c9f40cefacf18318364d5579edd8a7cf57442b93148b894",
+      "hash": "3c745a811d7e38666b927ed90e9bd346b9b0d5f65247b22bfedb536a66653695",
       "title": "FlyDragon F722V2/F722V2.2 SBUS -> Servo 5 Remap",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "board_name": [
         "FLYDRAGONF722_V2",
@@ -294,6 +291,123 @@
       ],
       "author": "FlyDragonRC",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/remapping/FDRC/f722v2/wires-forward.txt",
+      "hash": "80095bce7555a2e19c00301f12930b6a7b53d3bbacf85a7924d1dbfd4549ae72",
+      "title": "FlyDragon F722V2/F722V2.2 FC Orientation Wires Forward",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "board_name": [
+        "FLYDRAGONF722_V2",
+        "FLYDRAGONF722_V2_2"
+      ],
+      "category": "REMAPPING",
+      "status": "COMMUNITY",
+      "keywords": [
+        "wires forward"
+      ],
+      "author": "FlyDragonRC",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/setup/oats87/blackbox.txt",
+      "hash": "9c1b86ad0c97e60f9c6486d3f3a708dd6b3976ae57c7e67837d2c4f15a2a6b08",
+      "title": "Blackbox Setup",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Blackbox"
+      ],
+      "author": "Oats87",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/setup/oats87/filter-setup.txt",
+      "hash": "64dc02bfceffb1be8a4cefeddc17cee61731647428636879a84ebcd3f9dbe902",
+      "title": "Servo Setup",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter"
+      ],
+      "author": "Oats87",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/setup/oats87/rx-setup.txt",
+      "hash": "d4aad967c77511dcbc2eb1bc8de32231035be10bcc6b891982e6ab1b312be7ed",
+      "title": "RX Setup",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "receiver",
+        "rx"
+      ],
+      "author": "Oats87",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/setup/servo-setup.txt",
+      "hash": "11c8993908f55b785bd3a930030438fbf1275e60f4ad2086c14809bc04c2eceb",
+      "title": "Servo Setup",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "servos"
+      ],
+      "author": "Oats87",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/profile/rc-upgrade-hsi-fix.txt",
+      "hash": "114e5117521294b4a2236f8f9063a8a69f6f8a2e88474b62cc37bfcb9a03c349",
+      "title": "4.5.0-RC2 HSI Upgrade Fix",
+      "firmware_version": [
+        "4.5.0-RC2"
+      ],
+      "category": "PROFILE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "hsi"
+      ],
+      "author": "Oats87",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/rateprofile/oats87/rateprofile.txt",
+      "hash": "83b5da9433aa065f7fe722afb705d02b0ecdc09210eaa3d4d4e02b0ce71f64a5",
+      "title": "Oats87's Rate Profile",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "RATEPROFILE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "rateprofile"
+      ],
+      "author": "Oats87",
+      "force_options_review": true,
+      "priority": 10000
     }
   ]
 }
