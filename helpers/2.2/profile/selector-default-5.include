@@ -1,0 +1,20 @@
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Preset Profile
+    #$ OPTION BEGIN (UNCHECKED): -> Profile 1
+    profile 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Profile 2
+    profile 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Profile 3
+    profile 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Profile 4
+    profile 3
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Profile 5
+    profile 4
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): -> Profile 6
+    profile 5
+    #$ OPTION END
+#$ OPTION_GROUP END

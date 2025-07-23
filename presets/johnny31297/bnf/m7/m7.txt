@@ -1,0 +1,382 @@
+#$ TITLE: Jonas Wackershauser M7 BNF
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: SETUP
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: bnf
+#$ AUTHOR: johnny31297
+#$ FORCE_OPTIONS_REVIEW: true
+
+#$ PARSER: MARKED
+#$ DESCRIPTION: Jonas Wackershauser's M7 Setup
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Description:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: lol
+
+#$ OPTION_GROUP BEGIN: Filters
+    #$ OPTION BEGIN (CHECKED): Apply
+        #$ INCLUDE: helpers/2.2/bnf/filter-defaults.include
+        feature -DYN_NOTCH
+        feature RPM_FILTER
+        set gyro_lpf1_static_hz = 125
+        set gyro_lpf2_static_hz = 0
+        set dyn_notch_count = 2
+        set dyn_notch_min_hz = 50
+        set gyro_rpm_notch_preset = 0
+        set gyro_rpm_notch_preset = 0
+        set gyro_rpm_notch_source_pitch = 11,12,14,21,22,0,0,0,0,0,0,0,0,0,0,0
+        set gyro_rpm_notch_q_pitch = 80,30,60,60,50,0,0,0,0,0,0,0,0,0,0,0
+        set gyro_rpm_notch_source_roll = 11,12,14,21,22,0,0,0,0,0,0,0,0,0,0,0
+        set gyro_rpm_notch_q_roll = 80,30,60,60,50,0,0,0,0,0,0,0,0,0,0,0
+        set gyro_rpm_notch_source_yaw = 11,12,14,21,22,0,0,0,0,0,0,0,0,0,0,0
+        set gyro_rpm_notch_q_yaw = 100,40,80,80,50,0,0,0,0,0,0,0,0,0,0,0
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Radio/Servo/Mixer/ESC Config
+    #$ OPTION BEGIN (UNCHECKED): Apply
+        # feature
+        feature RX_SERIAL
+        feature TELEMETRY
+        feature GOVERNOR
+        feature ESC_SENSOR
+        feature FREQ_SENSOR
+
+        # serial
+        serial 0 1024 115200 57600 0 115200
+        serial 3 64 115200 57600 0 115200
+
+        # servo
+        servo 1 1515 -700 700 500 500 333 0 3
+        servo 2 1457 -700 700 500 500 333 0 2
+        servo 3 1500 -700 700 500 500 333 0 3
+        servo 4 735 -350 350 250 250 500 0 3
+
+        # mixer input
+        mixer input SR -1183 1183 950
+        mixer input SP -1183 1183 -950
+        mixer input SY -1875 1208 630
+        mixer input SC -1333 1333 1015
+
+        # mixer rule
+        mixer rule 0 add AUX3 S5 -1000 0
+
+        # map
+        map AECR1T23
+
+        # aux
+        aux 0 0 0 1900 2100 0 0
+
+        # adjfunc
+        adjfunc 0 1 1 900 2100 1 900 2100 900 2100 0 1 4
+        adjfunc 1 2 1 900 2100 1 900 2100 900 2100 0 1 4
+
+        # master
+        set serialrx_provider = CRSF
+        set blackbox_mode = ARMED
+        set blackbox_rate_denom = 2
+        set blackbox_rolling_erase = ON
+        set min_throttle = 1000
+        set motor_pwm_rate = 140
+        set motor_poles = 10,8,8,8
+        set main_rotor_gear_ratio = 13,122
+        set tail_rotor_gear_ratio = 22,110
+        set bat_capacity = 5100
+        set vbat_max_cell_voltage = 425
+        set current_meter = ESC
+        set battery_meter = ESC
+        set battery_cell_count = 12
+        set tail_center_trim = 229
+        set swash_pitch_limit = 2000
+        set swash_geo_correction = -10
+        set gov_mode = PASSTHROUGH
+        set gov_startup_time = 0
+        set gov_spoolup_time = 0
+        set gov_tracking_time = 0
+        set gov_recovery_time = 0
+        set gov_autorotation_timeout = 300
+        set gov_autorotation_bailout_time = 1
+        set gov_autorotation_min_entry_time = 0
+        set gov_lost_headspeed_timeout = 100
+        set rc_deflection = 512
+        set rc_arm_throttle = 1005
+        set rc_min_throttle = 1015
+        set rc_max_throttle = 2000
+        set pid_process_denom = 2
+        set report_cell_voltage = ON
+        set crsf_telemetry_mode = CUSTOM
+        set crsf_telemetry_link_rate = 500
+        set crsf_telemetry_link_ratio = 4
+        set telemetry_sensors = 3,4,5,6,8,43,50,60,58,59,88,89,90,91,93,95,10,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+        set esc_sensor_protocol = SCORPION
+        set esc_sensor_halfduplex = ON
+        set esc_sensor_pinswap = ON
+        set esc_sensor_voltage_correction = 2
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Profile 1 to
+    #$ OPTION BEGIN (CHECKED): Profile 1
+        profile 0
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 2
+        profile 1
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 3
+        profile 2
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 4
+        profile 3
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 5
+        profile 4
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 6
+        profile 5
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-0.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Profile 2 to
+    #$ OPTION BEGIN (UNCHECKED): Profile 1
+        profile 0
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Profile 2
+        profile 1
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 3
+        profile 2
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 4
+        profile 3
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 5
+        profile 4
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 6
+        profile 5
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-1.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Profile 3 to
+    #$ OPTION BEGIN (UNCHECKED): Profile 1
+        profile 0
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 2
+        profile 1
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Profile 3
+        profile 2
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 4
+        profile 3
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 5
+        profile 4
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 6
+        profile 5
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-2.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Profile 4 to
+    #$ OPTION BEGIN (UNCHECKED): Profile 1
+        profile 0
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 2
+        profile 1
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 3
+        profile 2
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Profile 4
+        profile 3
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 5
+        profile 4
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Profile 6
+        profile 5
+        #$ INCLUDE: helpers/2.2/bnf/profile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/profile-3.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+#$ OPTION_GROUP BEGIN: Apply Preset Rate Profile 1 to
+    #$ OPTION BEGIN (CHECKED): Rates 1
+        rateprofile 0
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 2
+        rateprofile 1
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 3
+        rateprofile 2
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 4
+        rateprofile 3
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 5
+        rateprofile 4
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 6
+        rateprofile 5
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-0.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Rate Profile 2 to
+    #$ OPTION BEGIN (UNCHECKED): Rates 1
+        rateprofile 0
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Rates 2
+        rateprofile 1
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 3
+        rateprofile 2
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 4
+        rateprofile 3
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 5
+        rateprofile 4
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 6
+        rateprofile 5
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Rate Profile 3 to
+    #$ OPTION BEGIN (UNCHECKED): Rates 1
+        rateprofile 0
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 2
+        rateprofile 1
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Rates 3
+        rateprofile 2
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 4
+        rateprofile 3
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 5
+        rateprofile 4
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 6
+        rateprofile 5
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-1.include
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Apply Preset Rate Profile 4 to
+    #$ OPTION BEGIN (UNCHECKED): Rates 1
+        rateprofile 0
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 2
+        rateprofile 1
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 3
+        rateprofile 2
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Rates 4
+        rateprofile 3
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 5
+        rateprofile 4
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Rates 6
+        rateprofile 5
+        #$ INCLUDE: helpers/2.2/bnf/rateprofile-defaults.include
+        #$ INCLUDE: presets/johnny31297/bnf/m7/rateprofile-3.include
+    #$ OPTION END
+#$ OPTION_GROUP END

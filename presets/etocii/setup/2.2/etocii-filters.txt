@@ -14,7 +14,7 @@
 #$ DESCRIPTION: -----------
 #$ DESCRIPTION: etocii's filters are his recommended filters that can be used with his presets.
 
-#$ INCLUDE: helpers/2.2/filter-defaults.include
+#$ INCLUDE: helpers/2.2/filters/defaults.include
 feature -DYN_NOTCH
 feature RPM_FILTER
 

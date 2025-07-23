@@ -1,4 +1,4 @@
-#$ TITLE: FLYDRAGON Servo 5 Configuration
+#$ TITLE: FLYDRAGON V2.2 Remapping
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ BOARD_NAME: FLYDRAGONF722_V2
@@ -7,13 +7,22 @@
 #$ BOARD_NAME: FLYDRAGON_V2_2
 #$ CATEGORY: REMAPPING
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: sbus, s.bus, fport, f.port, servo
+#$ KEYWORDS: rpm-s rpm-e rpm
 #$ AUTHOR: FDRC
-#$ DESCRIPTION: Enables the F.Port or SBUS output to be used as Servo 5.
+#$ DESCRIPTION: Preset that contains the remapping options for a FLYDRAGON V2.2 such as usable RPM port and servo 5.  
 #$ PRIORITY: 0
 
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) RPM Port
+    #$ OPTION BEGIN (CHECKED): RPM-E
+    resource FREQ 1 A01
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): RPM-S
+    resource FREQ 1 A15
+    #$ OPTION END
+#$ OPTION_GROUP END
+
 #$ OPTION_GROUP BEGIN: (EXCLUSIVE) Servo 5 Port
-    #$ OPTION BEGIN (CHECKED): F.Port
+    #$ OPTION BEGIN (UNCHECKED): F.Port
     resource SERIAL_TX 2 none
     resource SERVO 5 A02
     timer A02 AF3

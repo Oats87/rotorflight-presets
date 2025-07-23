@@ -1,0 +1,20 @@
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) Preset Rate Profile
+    #$ OPTION BEGIN (UNCHECKED): -> Rate Profile 1
+    rateprofile 0
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Rate Profile 2
+    rateprofile 1
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): -> Rate Profile 3
+    rateprofile 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Rate Profile 4
+    rateprofile 3
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Rate Profile 5
+    rateprofile 4
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): -> Rate Profile 6
+    rateprofile 5
+    #$ OPTION END
+#$ OPTION_GROUP END
